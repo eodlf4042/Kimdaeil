@@ -7,7 +7,7 @@ public class hello {
 		
 		// 실행 단축키 [Ctrl + F11]
 				System.out.println("Hello World");
-				//DDDDDDDDDD		
+				
 				// 자동완성 단축키 [Ctrl + Space]
 				// 코드라인 복사(Copy Lines)
 				// 단축키 [Ctrl + Alt + 방향키 아래]
