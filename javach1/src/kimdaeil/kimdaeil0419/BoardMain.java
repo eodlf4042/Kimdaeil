@@ -40,8 +40,8 @@ public class BoardMain {
 				System.out.print(">>> ");
 				String content = scan.nextLine();
 				
-				Board board = new Board(0, name, boardday, content);
-				boardDB.addBoard(board);
+			Board board = new Board(0, name, content, "");
+			boardDB.addBoard(board);
 				
 			}else {
 				// 종료
