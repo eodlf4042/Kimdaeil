@@ -1,5 +1,7 @@
 package ch09_class.homepage;
 
+import java.sql.Date;
+
 public class Board {
 	private int no;   		// 글 번호
 	private String title;  	// 글 제목
@@ -51,6 +53,9 @@ public class Board {
 
 	public void setAuthor(String author) {
 		this.author = author;
+	}
+
+	public static void getBoardday(String string, Date date) {
 	}
 	
 	

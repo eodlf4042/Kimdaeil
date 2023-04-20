@@ -1,4 +1,4 @@
-package ch_11_api;
+package ch11_api;
 
 import java.text.DateFormat;
 import java.text.ParseException;

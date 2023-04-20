@@ -17,7 +17,7 @@ public class BoardMain {
 			boardDB.showBoardList();
 			
 			System.out.println("행동을 선택해주세요");
-			System.out.println("1. 글목록 | 2. 글쓰기 | 3. 로그아웃");
+			System.out.println("1. 글목록 | 2. 글쓰기 | 3. 종료");
 			System.out.print(">>> ");
 			
 			int select = Integer.parseInt(scan.nextLine());
@@ -40,11 +40,11 @@ public class BoardMain {
 				System.out.print(">>> ");
 				String content = scan.nextLine();
 				
-				Board board = new Board(0, name, content, content);
+				Board board = new Board(0, name, boardday, content);
 				boardDB.addBoard(board);
 				
 			}else {
-				// 로그아웃
+				// 종료
 				break;
 			}
 			

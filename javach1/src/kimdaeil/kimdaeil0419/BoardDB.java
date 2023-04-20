@@ -12,6 +12,7 @@ public class BoardDB {
 	// 생성할 목적으로 사용
 	private BoardDB() {
 		boardList.add(new Board(1, "공지사항 필독!!", "욕설 금지", "admin"));
+		
 	}
 	
 	private static BoardDB instance = new BoardDB();
@@ -38,6 +39,7 @@ public class BoardDB {
 		boardList.add(board);
 	}
 	
+	//조회
 	public void selectBoard(int no) {
 		// boardList에 존재하는 board 객체 중에
 		// 파라미터로 들어온 no와 같은 no를 가지는 board 객체 찾기

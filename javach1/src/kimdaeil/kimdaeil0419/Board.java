@@ -7,7 +7,7 @@ public class Board {
 	private String content; // 글 내용
  
 	public Board() {}
-
+	
 	public Board(int num, String name, String boardday, String content) {
 		super();
 		this.num = num;
@@ -18,7 +18,7 @@ public class Board {
 
 	@Override
 	public String toString() {
-		return "board [num=" + num + ", name=" + name + ", boardday=" + boardday + ", content=" + content + "]";
+		return "board [num=" + num + ", name=" + name + ", boardday=" + boardday + "]";
 	}
 
 	public int getNum() {
