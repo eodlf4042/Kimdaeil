@@ -7,18 +7,19 @@ public class  CartoonBoard extends Board {
 	
 	public CartoonBoard() {}
 
-	
-	public CartoonBoard(int num, String name, String boardday, String content, String img) {
-		super(num, name, boardday, content);
+	public CartoonBoard(int no, String title,  String boardday, String content, String img) {
+		super(no,title,boardday,content);
 		this.img = img;
 	}
 
+	
 	@Override
 	public String toString() {
-		return "CartoonBoard [num=" + getNum() + ", name=" + getName() + ", boardday=" + getBoardday() + ", content=" + getContent()
-				+ ", img=" + img + "]";
+		return "CartoonBoard [no=" + getNo() + ", title=" + getTitle() +
+				", boardday=" + getBoardday() + ", content=" + getContent() + "img=" + img + "]";
 	}
-
+	
+	
 	public String getImg() {
 		return img;
 	}
@@ -27,6 +28,5 @@ public class  CartoonBoard extends Board {
 		this.img = img;
 	}
 
-	
 }
 

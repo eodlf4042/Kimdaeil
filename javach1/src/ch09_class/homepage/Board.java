@@ -8,7 +8,7 @@ public class Board {
 	private String content; // 글 내용
 	private String author;	// 작성자
 	
-	public Board() {}
+	public Board(int i, String name, String content2, java.util.Date dateToday) {}
 	
 	public Board(int no, String title, String content, String author) {
 		super();

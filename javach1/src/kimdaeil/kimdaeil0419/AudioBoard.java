@@ -8,17 +8,20 @@ public class AudioBoard extends Board{
 
 
 
-	public AudioBoard(int num, String name, String boardday, String content, String oido) {
-		super(num, name, boardday, content);
+	public AudioBoard(int no, String title, String boardday, String content, String oido) {
+		super(no, title, boardday, content);
 		this.odio = odio;
 	}
 	
 
+
+
 	@Override
 	public String toString() {
-		return "CartoonBoard [num=" + getNum() + ", name=" + getName() + ", boardday=" + getBoardday() + ", content=" + getContent()
-				+ ", odio=" + odio + "]";
+		return "CartoonBoard [no=" + getNo() + ", title=" + getTitle() + ", boardday=" + getBoardday() + ", content=" + getContent()
+		+ ", odio=" + odio + "]";
 	}
+
 
 
 	public String getOdio() {

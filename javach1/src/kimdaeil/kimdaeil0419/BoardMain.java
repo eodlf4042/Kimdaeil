@@ -1,6 +1,10 @@
 package kimdaeil.kimdaeil0419;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
+
+import com.sun.org.apache.bcel.internal.generic.SIPUSH;
 
 import ch09_class.homepage.Board;
 import ch09_class.homepage.BoardDB;
@@ -10,6 +14,9 @@ public class BoardMain {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
+		CartoonBoard cb = new CartoonBoard(1, "일빠", "내용", "2023.04.21", "이미지");
+		System.out.println(cb);
+		
 		BoardDB boardDB = BoardDB.getInstance();
 		
 		while(true) {
@@ -24,10 +31,7 @@ public class BoardMain {
 			
 			if(select == 1) {
 				// 글조회
-				System.out.println("글 번호를 입력해주세요");
-				System.out.print(">>> ");
-				int no = Integer.parseInt(scan.nextLine());
-				boardDB.selectBoard(no);
+			boardDB.showBoardList();
 				
 			}else if(select == 2) {
 		
@@ -40,8 +44,10 @@ public class BoardMain {
 				System.out.print(">>> ");
 				String content = scan.nextLine();
 				
-			Board board = new Board(0, name, content, "");
-			boardDB.addBoard(board);
+//				boardDB.addBoard(new Board(title, content));
+//				SimpleDateFormat new SimpleDateFormat("yyyy.MM.dd. HH:mm:ss초");
+//				boardDB.addBoard(new Board(title, content, sdf, ));
+//				
 				
 			}else {
 				// 종료
