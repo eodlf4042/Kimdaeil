@@ -18,7 +18,6 @@ public class JdbcTransaction {
 	 * 
 	 * 만약 준호씨 계좌에서 250만원을 뺐더니 잔액이 0원이하가
 	 * 된다면 없었던일로 하고 롤백 시킨다.
-	 * 
 	 * */
 
 	public static void main(String[] args) {
