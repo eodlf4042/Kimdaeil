@@ -92,6 +92,19 @@ public class StudentService {
 		
 	}
 	
+	// 학생 점수 증가 메소드
+	public void plusSCore(String stuId) {
+		Connection conn = cp.getConnection();
+		
+		try {
+			dao.plusSCore(conn, stuId);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			cp.releaseConnection(conn);
+		}		
+	}
+	
 	
 	
 	
